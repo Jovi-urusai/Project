@@ -1,0 +1,354 @@
+* {
+    padding: 0;
+    margin: 0;
+      
+    }
+    body {
+      font-family: Poppins, sans-serif;font-family: Poppins, sans-serif; 
+      background: linear-gradient(100deg, rgba(2,0,36,1) 5%, rgba(9,121,120,1) 49%, rgba(0,212,255,1) 100%);
+    }
+  
+    h1 {
+      padding: 3px;
+      font-weight: 600;
+      text-align: center;
+      color: #fff;
+      margin-top: 100rem;
+      
+    }
+    h5 {
+      border-right: solid 5px rgba(255,255,255,.75);
+      white-space: nowrap;
+      overflow: hidden;    
+      font-family: 'Source Code Pro', monospace;  
+      font-size: 40px;
+      color: rgba(255,255,255,.70);
+      animation: animated-text 10s 1s 1 normal both,
+      animated-cursor 600ms linear infinite;
+      margin-top: 100px;
+      text-transform: uppercase;
+  }
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 1005px;}
+    }
+    
+    
+    @keyframes animated-cursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+    }
+    
+  p{
+    border-right: solid 5px rgba(255,255,255,.75);
+      white-space: nowrap;
+      overflow: hidden;    
+      font-family: 'Source Code Pro', monospace;  
+      font-size: 40px;
+      color: rgba(255,255,255,.70);
+      animation: animated 7s 10s 1 normal both,
+      cursor 600ms linear infinite;
+      text-transform: uppercase;
+  }
+  @keyframes animated{
+    from{width: 0;}
+    to{width: 1140px;}
+    }
+    
+    
+    @keyframes cursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+    }
+  
+    .calendar {
+      margin: auto;
+      width: 380px;
+      padding: 1rem;
+      background: #eccece00;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      margin-top: -20px;
+      margin-bottom: 30px;
+      animation: change 8s ease-in infinite;
+  
+    }
+    @keyframes change {
+      0%{
+          background-position: 0 50%;
+      }
+      50%{
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0 50%;
+      }
+    }
+    
+    .calendar main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .calendar ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .calendar ul li {
+      width: calc(100% / 7);
+      margin-top: 25px;
+      position: relative;
+      z-index: 2;
+    }
+    .calendar .game {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    #prev,
+    #next {
+      width: 20px;
+      height: 20px;
+      position: relative;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+    }
+    #prev::before,
+    #next::before {
+      content: "";
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-style: solid;
+      border-width: 0.25em 0.25em 0 0;
+      border-color: #ccc;
+    }
+    #next::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    #prev::before {
+      transform: translate(-50%, -50%) rotate(-135deg);
+    }
+    #prev:hover::before,
+    #next:hover::before {
+      border-color: #000;
+    }
+    .days {
+      font-weight: 600;
+    }
+    .dates li.today {
+      color: #fff;
+    }
+    .dates li.today::before {
+      content: "";
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #000;
+      border-radius: 50%;
+      z-index: -1;
+    }
+    .dates li.inactive {
+      color: #ccc;
+    }
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .He {
+      margin: 20px;
+      text-decoration: none;
+      width: 71px;
+      font-size: large;
+    }
+    header ul li a{ 
+      text-decoration: none; transition: 0.5s; 
+    } 
+    header ul li a:hover { 
+      color: #493b68; 
+      background: transparent;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      padding: 7px 12px;
+      border-radius: 5px;
+    }
+    .logo a{
+      font-size: 42px;
+      text-decoration: none;
+      position: fixed;
+      padding-bottom: -100px;
+      margin-left: -716px;
+      margin-top: 18px;
+      border-color: #00d9ff;
+    
+    
+    }
+    span{
+      color: #645091;
+    
+    }
+    nav{
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-color: #00d9ff;
+    }
+    .hey {
+      margin-left: 40px;
+    }
+    .Nika {
+      font-size: 40px;
+      color: #ffffffe0;
+      text-align: center;
+      animation: glow 1s ease-in-out infinite alternate;
+      margin-top: 500px;
+      margin-right: 1070px;
+      font-family: Garamond, serif;
+    }
+  
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fffafab9, 0 0 20px #0077ffdc, 0 0 30px #03bcf4, 0 0 40px #03bcf4, 0 0 50px #03bcf4, 0 0 60px #03bcf4, 0 0 70px #03bcf4;
+      }
+      
+      to {
+        text-shadow: 0 0 20px #ffffffb6, 0 0 30px #0077ffdc, 0 0 40px #0079ff, 0 0 50px #0079ff, 0 0 60px #0079ff, 0 0 70px #0079ff, 0 0 80px #0079ff;
+      }
+    }
+    .content{
+      margin-top: 10%;
+      max-width: 600px;
+    
+    }
+    .content h3{
+      font-size: 50px;
+      margin-left: 90px;
+      color: #fff;
+    
+    } 
+    img{
+      width: 460px;
+      margin-left: 60px;
+      margin-top: 30px;
+      box-shadow: 13px 11px 17px #0370ffbe;
+      border-radius: 10px;
+    }
+    .Ella{
+      margin-left: 630px;
+      margin-bottom: 100px;
+      margin-top: -435px;
+      font-size: 20px;
+    }
+    .ki {
+      font-size: x-large;
+      list-style: none;
+      font-size: 40px;
+      text-decoration: none;
+    }
+    .aw{
+      text-decoration: none;
+      
+    }
+    .qa {
+      float: right;
+      height: 300px;
+      width: 300px;
+      margin-top: 110px;
+      margin-left: 10px;
+    }
+    .qaq{
+      margin-top: -470px;
+    }
+     h4{
+  
+      font-size: 40px;
+      font-family: Garamond, serif;
+      margin-top: 10px;
+      animation: glow 1s ease-in-out infinite alternate;
+      color: #ffffff;
+    }
+    .kiss{
+      margin-left: 650px;
+      margin-bottom: 100px;
+      margin-top: -43px;
+      font-size: 20px;
+      list-style: disc;
+    }
+  
+    .Nik{
+      font-size: 40px;
+      color: #ffffffe0;
+      text-align: center;
+      animation: glow 1s ease-in-out infinite alternate;
+      margin-top: 277px;
+      margin-right: 1074px;
+      font-family: Garamond, serif;
+    }
+    .ki{
+      font-size: 40;
+      font-family: Garamond, serif;
+      text-decoration: underline;
+    }
+    h6 {
+      padding: 10px;
+      font-weight: 600;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 2rem;
+      margin-top: 280px;
+      text-transform: uppercase;
+      font-size: 40px;
+    }
+    .ki a{
+      color: #ccc;
+    }
+  .contet{
+    margin-top: 140px;
+    margin-left: 61px;
+    margin-bottom: 100px;
+  }
+  hr.po {
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 120px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .blue-bg {
+    background-color: blue;
+    color: white;
+  }
+  .last {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 500px;
+    text-align: center;
+    background: rgba(0, 0, 0, .1); right: 50%;
+    margin-bottom: 40px;
+    border-radius: 10px;
+  }
+  strong {
+    text-align: center;
+  }
+  b {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .aw {
+    margin-left: -50px;
+  }
+footer {
+    margin-bottom: -300px;
+}
